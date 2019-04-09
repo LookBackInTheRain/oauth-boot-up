@@ -14,9 +14,10 @@ import org.springframework.context.annotation.Configuration;
  *
  * 配置
  */
-@Configuration
+
 @EnableConfigurationProperties
 @ConfigurationProperties(prefix = "boot.oauth")
+@Configuration
 public class BootSecurityProperties {
 
 
@@ -38,6 +39,8 @@ public class BootSecurityProperties {
 
     @NestedConfigurationProperty
     private BootSmsCodeProperties sms =  new BootSmsCodeProperties();
+
+    private String pictureCodeParameterName="p_code";
 
     private String tokenSigningKey = "OAUTHBOOT@IUY09&098#UIOKNJJ-YUIT.CLUB";
 
@@ -84,5 +87,11 @@ public class BootSecurityProperties {
         this.tokenSigningKey = tokenSigningKey;
     }
 
+    public String getPictureCodeParameterName() {
+        return pictureCodeParameterName;
+    }
 
+    public void setPictureCodeParameterName(String pictureCodeParameterName) {
+        this.pictureCodeParameterName = pictureCodeParameterName;
+    }
 }
