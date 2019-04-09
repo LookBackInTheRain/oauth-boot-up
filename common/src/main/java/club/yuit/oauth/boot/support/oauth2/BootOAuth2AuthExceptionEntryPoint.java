@@ -1,4 +1,4 @@
-package club.yuit.oauth.boot.auth.support.oauth2;
+package club.yuit.oauth.boot.support.oauth2;
 
 import club.yuit.oauth.boot.response.HttpResponse;
 import club.yuit.oauth.boot.utils.HttpUtils;

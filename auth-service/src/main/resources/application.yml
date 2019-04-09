@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: boot-cli
+    name: oauth-boot-service
   # mysql 配置
   datasource:
     username: dev

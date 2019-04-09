@@ -1,9 +1,9 @@
 package club.yuit.oauth.boot.auth.config.auth2;
 
-import club.yuit.oauth.boot.filter.BootBasicAuthenticationFilter;
-import club.yuit.oauth.boot.support.BootUserDetailService;
-import club.yuit.oauth.boot.support.oauth2.BootClientDetailsService;
-import club.yuit.oauth.boot.support.oauth2.BootOAuth2WebResponseExceptionTranslator;
+import club.yuit.oauth.boot.auth.filter.BootBasicAuthenticationFilter;
+import club.yuit.oauth.boot.auth.support.BootUserDetailService;
+import club.yuit.oauth.boot.auth.support.oauth2.BootClientDetailsService;
+import club.yuit.oauth.boot.auth.support.oauth2.BootOAuth2WebResponseExceptionTranslator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

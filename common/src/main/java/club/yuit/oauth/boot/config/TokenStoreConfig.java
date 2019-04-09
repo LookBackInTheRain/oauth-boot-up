@@ -1,4 +1,4 @@
-package club.yuit.oauth.boot.auth.config.auth2;
+package club.yuit.oauth.boot.config;
 
 import club.yuit.oauth.boot.support.BootSecurityProperties;
 import org.springframework.beans.factory.BeanCreationException;

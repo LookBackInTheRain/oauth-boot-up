@@ -58,7 +58,7 @@ public class CoreConfig extends WebMvcConfigurationSupport {
                 .globalOperationParameters(parameters)
                 .apiInfo(this.apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("club.yuit.oauth.boot.controller"))
+                .apis(RequestHandlerSelectors.basePackage("club.yuit.oauth.boot.resource.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

@@ -34,25 +34,26 @@ public class User implements UserDetails {
     private List<GrantedAuthority> authorities;
 
 
+    @Override
     public List<? extends GrantedAuthority> getAuthorities() {
         return authorities;
     }
 
-
+    @Override
     public boolean isAccountNonExpired() {
         return true;
     }
 
-
+    @Override
     public boolean isAccountNonLocked() {
         return this.isLocked;
     }
 
-
+    @Override
     public boolean isCredentialsNonExpired() {
         return true;
     }
-
+    @Override
     public boolean isEnabled() {
         return this.isEnable;
     }

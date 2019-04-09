@@ -1,8 +1,8 @@
 package club.yuit.oauth.boot.auth.config;
 
+import club.yuit.oauth.boot.auth.support.BootUserDetailService;
 import club.yuit.oauth.boot.support.BootLoginFailureHandler;
 import club.yuit.oauth.boot.support.BootSecurityProperties;
-import club.yuit.oauth.boot.support.BootUserDetailService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
