@@ -75,7 +75,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         // 表单登录
         http.formLogin()
-                .failureHandler(handler)
+                //.failureHandler(handler)
                 // 页面
                 .loginPage("/auth/login")
                 // 登录处理url

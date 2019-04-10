@@ -1,6 +1,7 @@
 package club.yuit.oauth.boot.auth.config;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 
@@ -22,9 +23,9 @@ public class CoreConfig extends WebMvcConfigurationSupport {
         registry.viewResolver(new InternalResourceViewResolver());
     }*/
 
-
-
-
-
-
+    @Override
+    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/statics/**")
+                .addResourceLocations("classpath:/statics/");
+    }
 }
