@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
+
     <meta charset="UTF-8">
     <title>登录</title>
-    <link rel="stylesheet" href="/statics/libs/mdui/css/mdui.css"/>
+    <link rel="icon" href="/favicon.ico"  type="image/x-icon"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="/statics/libs/mdui/css/mdui-1.css"/>
     <link rel="stylesheet" href="/statics/libs/base.css"/>
     <script type="application/javascript" src="/statics/libs/mdui/js/mdui.min.js"></script>
 </head>
@@ -18,7 +21,7 @@
     }
 </style>
 
-<body>
+<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-loaded">
 <div class="mdui-container mdui-valign" style="height: 500px ">
     <div class="mdui-col-md-6 mdui-col-offset-md-3 mdui-shadow-10 " >
         <div>
@@ -65,7 +68,7 @@
                     </div>
                     <br>
                     <div>
-                        <button class=" mdui-btn mdui-btn-raised mdui-btn-block  ">登 录</button>
+                        <button class="mdui-btn  mdui-btn-raised mdui-btn-block mdui-color-theme-accent mdui-ripple">登 录</button>
                     </div>
                 </div>
             </form>
@@ -94,7 +97,9 @@
                     </div>
 
                     <div>
-                        <button class="mdui-btn mdui-btn-raised mdui-btn-block mdui-ripple mdui-theme-accent-red">登 录</button>
+                        <button class="mdui-btn mdui-btn-raised mdui-btn-block mdui-ripple mdui-color-theme-accent" disabled>
+                            登 录 （Future）
+                        </button>
                     </div>
                 </div>
             </form>

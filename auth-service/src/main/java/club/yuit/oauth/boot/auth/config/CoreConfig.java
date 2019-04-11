@@ -27,5 +27,7 @@ public class CoreConfig extends WebMvcConfigurationSupport {
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/statics/**")
                 .addResourceLocations("classpath:/statics/");
+
+        registry.addResourceHandler("/favicon.ico").addResourceLocations("classpath:/statics/favicon.ico");
     }
 }

@@ -8,3 +8,12 @@
 
 }
 
+.btn-theme-red{
+    color: white;
+    background-color: red;
+}
+
+.btn-theme-red:hover{
+    color: white;
+    background-color: red;
+}
