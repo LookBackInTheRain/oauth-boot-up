@@ -36,7 +36,7 @@ public class PictureCodeGenerator {
 
     public static void generate(HttpServletResponse response) throws IOException {
 
-        BootSessionPictureCode sessionPictureCode = new BootSessionPictureCode();
+        BootSessionPictureCodeService sessionPictureCode = new BootSessionPictureCodeService();
 
         String code = createCodeStr(4);
 

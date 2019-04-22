@@ -4,7 +4,7 @@ package club.yuit.oauth.boot.auth.support.code;
  * @author yuit
  * @date 2019/4/9 17:43
  */
-public interface BootCode<T> {
+public interface BootCodeService<T> {
     /**
      * 获取验证码
      * @param key

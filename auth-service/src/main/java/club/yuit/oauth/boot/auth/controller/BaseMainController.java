@@ -1,6 +1,5 @@
 package club.yuit.oauth.boot.auth.controller;
 
-import club.yuit.oauth.boot.auth.support.code.picture.BootSessionPictureCode;
 import club.yuit.oauth.boot.auth.support.code.picture.PictureCodeGenerator;
 import club.yuit.oauth.boot.support.BootSecurityProperties;
 import jdk.nashorn.internal.objects.annotations.Getter;
@@ -31,6 +30,8 @@ public class BaseMainController {
 
         model.addAttribute("loginProcessUrl",properties.getLoginProcessUrl());
 
+        model.addAttribute("pictureCodeParameterName",properties.getPictureCodeParameterName());
+
         return "base-login";
     }
 
@@ -38,9 +39,6 @@ public class BaseMainController {
     @ResponseBody
     public String index(HttpSession session){
 
-        BootSessionPictureCode pictureCode = new BootSessionPictureCode();
-
-        String code= pictureCode.getCodeValue("p_code");
 
         return "index";
     }

@@ -54,7 +54,7 @@
                     <div class="mdui-row">
                         <div class="mdui-col-md-9">
                             <div class="mdui-textfield">
-                                <input class="mdui-textfield-input" type="text" placeholder="验证码**" required/>
+                                <input class="mdui-textfield-input" th:name="${pictureCodeParameterName}" type="text" placeholder="验证码**" required/>
                             </div>
 
                         </div>
@@ -108,6 +108,8 @@
 
             social_login
         </div>
+
+        <p class="mdui-p-a-2" style="color: red;text-align: center" th:if="${param.error}" th:text="${param.error}"></p>
 
         <div class="mdui-text-center">
             <p class="mdui-typo-body-1-opacity">
